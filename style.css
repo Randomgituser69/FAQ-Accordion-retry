@@ -115,11 +115,13 @@ body {
   font-weight: 600;
   color: var(--Dark-purple);
 }
-/*
+
 .question-answer {
   display: none;
 }
-*/
+.show-answer {
+  display: block;
+}
 .question-answer p {
   font-weight: 400;
   color: var(--Grayish-purple);
