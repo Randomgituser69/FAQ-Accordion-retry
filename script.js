@@ -1,7 +1,7 @@
-const answerBtn = document.querySelectorAll('button')
+const answerBtns = document.querySelectorAll('button')
 
-answerBtn.forEach(function(button) {
-    button.addEventListener('click', function(e) {
+answerBtns.forEach(function(btn) {
+    btn.addEventListener('click', function(e) {
       const answer = e.currentTarget.parentElement.parentElement
       answer.classList.toggle('show-answer')
     })
