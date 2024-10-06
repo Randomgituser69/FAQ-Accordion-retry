@@ -1,4 +1,4 @@
-const disclose = document.querySelectorAll('.question-answer')
+const disclose = document.querySelectorAll('.question')
 function hmm() {
   const togglu = this.getAttribute('aria-exanded') === "true"
   this.setAttribute('aria-expanded', !togglu)
@@ -9,8 +9,8 @@ function inchi() {
   }
   disclose.forEach(component => {
      component.dataset.state === "ready"
-     const baton = component.querySelectorAll('.disclose')
-     baton.forEach(btn => {
+     const discloseBtn = component.querySelectorAll('button')
+     discloseBtn.forEach(btn => {
       btn.removeAttribute('disabled')
       btn.addEventListener('click', hmm)
      })
