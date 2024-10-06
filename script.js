@@ -8,7 +8,7 @@ function inchi() {
     return
   }
   disclose.forEach(component => {
-     component.dataset.state === "ready"
+     component.dataset.state = "ready"
      const discloseBtn = component.querySelectorAll('button')
      discloseBtn.forEach(btn => {
       btn.removeAttribute('disabled')
