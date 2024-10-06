@@ -1,6 +1,6 @@
 const disclose = document.querySelectorAll('.question')
 function hmm() {
-  const togglu = this.getAttribute('aria-exanded') === "true"
+  const togglu = this.getAttribute('aria-expanded') === "true"
   this.setAttribute('aria-expanded', !togglu)
 }
 function inchi() {

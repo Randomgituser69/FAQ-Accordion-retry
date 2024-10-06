@@ -104,12 +104,11 @@ body {
 .title {
   display: flex;
   flex-direction: row;
-}/*
-.title-question {
-  display: flex;
+}
+p, button {
+  display: flex; 
   flex-direction: row;
-  justify-content: space-between;
-}*/
+}
 .question p {
   font-weight: 600;
   color: var(--Dark-purple);
