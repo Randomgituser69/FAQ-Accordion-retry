@@ -11,12 +11,6 @@
       href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/images/favicon-32x32.png"
-    />
     <script
       src="https://kit.fontawesome.com/70c69eb187.js"
       crossorigin="anonymous"
@@ -24,15 +18,22 @@
     <title>Frontend Mentor | FAQ accordion</title>
   </head>
   <body>
+    <style>
+      [data-state="no-js"], .question-answer {
+        display: none;
+      }
+    </style>
     <section class="card">
       <div class="title">
         <img src="icon-star.svg" />
         <h1>FAQs</h1>
       </div>
-      <article class="question">
-        <div class="title-question">
+      <article class="question" data-state="no-js">
           <p>What is Frontend Mentor, and how will it help me?</p>
-          <button class="question-button">
+          <button class="question-button disclose" 
+          aria-expanded="false" 
+          disabled
+          aria-controls="content">
             <span class="plus">
               <i class="fa-solid fa-plus"></i>
             </span>
@@ -50,10 +51,12 @@
           </p>
         </div>
       </article>
-      <article class="question">
-        <div class="title-question">
+      <article class="question" data-state="no-js">
           <p>Is Frontend Mentor free?</p>
-          <button class="question-button">
+          <button class="question-button disclose"
+          aria-expanded="false"
+          disabled 
+          aria-controls="content">
             <span class="plus">
               <i class="fa-solid fa-plus"></i>
             </span>
@@ -70,10 +73,14 @@
           </p>
         </div>
       </article>
-      <article class="question">
-        <div class="title-question">
+      <article class="question" data-state="no-js">
           <p>Can I use Frontend Mentor projects in my portfolio?</p>
-          <button class="question-button">
+          <button class="question-button disclose"
+          aria-expanded="false"
+
+          disabled
+
+          aria-controls="content">
             <span class="plus">
               <i class="fa-solid fa-plus"></i>
             </span>
@@ -90,10 +97,14 @@
           </p>
         </div>
       </article>
-      <article class="question">
-        <div class="title-question">
+      <article class="question" data-state="no-js">
           <p>How can I get help if I'm stuck on a Frontend Mentor challenge?</p>
-          <button class="question-button">
+          <button class="question-button disclose"
+          aria-expanded="false"
+
+          disabled
+
+          aria-controls="content">
             <span class="plus">
               <i class="fa-solid fa-plus"></i>
             </span>
@@ -117,6 +128,13 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
     </div>
+    <noscript>
+      <style>
+        [data-state="no-js"], .question-answer {
+          display: block;
+        }
+      </style>
+    </noscript>
     <script src="script.js"></script>
   </body>
 </html>
