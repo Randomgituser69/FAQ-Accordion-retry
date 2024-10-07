@@ -1,4 +1,6 @@
 const disclose = document.querySelectorAll('.question')
+const minus = document.querySelector('.minus')
+const plus = document.querySelector('.plus')
 function hmm() {
   const togglu = this.getAttribute('aria-expanded') === "true"
   this.setAttribute('aria-expanded', !togglu)
@@ -6,7 +8,7 @@ function hmm() {
 function inchi() {
   if(!disclose.length) {
     return
-  }
+  } 
   disclose.forEach(component => {
      component.dataset.state = "ready"
      const discloseBtn = component.querySelectorAll('button')

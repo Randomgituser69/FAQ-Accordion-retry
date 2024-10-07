@@ -105,16 +105,16 @@ body {
   display: flex;
   flex-direction: row;
 }
-p, button {
-  display: flex; 
-  flex-direction: row;
-}
+
 .question p {
   font-weight: 600;
   color: var(--Dark-purple);
 }
+.question, .title {
+  padding: 10px;
+}
 .disclose {
-  background-color: #222;
+  background-color: black;
   padding: 0.25em 0.5em;
   color: #fff;
   border: 0;
@@ -123,14 +123,13 @@ p, button {
   align-items: center;
   justify-content: space-between;
   gap: 1ch;
-
+  border-radius: 50px;
    
   &[aria-expanded="false"] {
     + .question-answer {
       display: none;
     }
   }
-
   &[aria-expanded="true"] {
     + .question-answer {
       display: block;
@@ -142,11 +141,13 @@ p, button {
   font-weight: 400;
   color: var(--Grayish-purple);
 }
-button {
-  background-color: transparent;
-  border: none;
-}
 .minus {
+  display: none;
+}
+.show {
+  display: block;
+}
+.hide {
   display: none;
 }
 .attribution {
