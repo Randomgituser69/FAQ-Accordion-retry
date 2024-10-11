@@ -144,12 +144,6 @@ body {
 .minus {
   display: none;
 }
-.show {
-  display: block;
-}
-.hide {
-  display: none;
-}
 .attribution {
   font-size: 11px;
   text-align: center;

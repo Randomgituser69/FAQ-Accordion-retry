@@ -8,7 +8,7 @@ function hmm() {
 function inchi() {
   if(!disclose.length) {
     return
-  } 
+  }
   disclose.forEach(component => {
      component.dataset.state = "ready"
      const discloseBtn = component.querySelectorAll('button')
