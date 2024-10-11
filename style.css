@@ -112,14 +112,14 @@ body {
 .title img {
   width: 2.2rem;
 }
-.question p {
+.question h3 {
   font-weight: 600;
   color: var(--Dark-purple);
 }
 .question, .title {
   gap: 1em;
 }
-.question p:hover {
+.question h3:hover {
   color: #AE28EB;
 }
 .disclose {
